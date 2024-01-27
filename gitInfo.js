@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+let gitDefinition = "git is the way you are able to connect your code, in our case in vs code, and connect it to github so you can save it to your repository.";
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -19,6 +20,8 @@
 
 //CODE HERE
 
+let gitHubDefinition = "GitHub is a way to store your code in the cloud, it is also a way to share code with anyone from freinds, work, to strangers around the world. As well as look at code from anyone.";
+
 //////////////////PROBLEM 3////////////////////
 /*
     Create a variable called 'gitInitDefinition'.  
@@ -26,6 +29,8 @@
 */
 
 //CODE HERE
+
+let gitinitDefinition = "git init = the way to initalize git. by creating a sub folder to save you work.";
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -35,6 +40,8 @@
 
 //CODE HERE
 
+let gitCloneDefinition = "git close is a way to copy a repository to your local machine.";
+
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +49,8 @@
 */
 
 //CODE HERE
+
+let gitStatusDefinition = "Displays info about the state of the working directory, and where it is.";
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -54,6 +63,10 @@
 
 //CODE HERE
 
+let gitAddDefinition = "stages changes in working directory. Marking them for the next time you commit";
+
+let gitAddCode = "git init; git add .;git commit -am "Name"; git remote add origin; git push ";
+
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -65,6 +78,9 @@
 
 //CODE HERE
 
+let gitCommitDefinition = "records changes in project, with a unique identifier ";
+
+let gitCommitCode = "git commit; git add -m "inital commit; git push"";
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +89,5 @@
 */
 
 //CODE HERE
+
+let gitPushDefinition = "sends changes to local repository";

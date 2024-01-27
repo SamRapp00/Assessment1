@@ -51,9 +51,21 @@ const pinkPrice = .55
 
 // CODE HERE
 
+const totalAcres = 0;
 
+for (let i = 0; i < fujiAcres.length; i++) {
+totalAcres += fujiAcres[i]
+}
 
+for (let i = 0; i < galaAcres.length; i++) {
+    totalAcres += galaAcres[i]
+    }
 
+    for (let i = 0; i < pinkAcres.length; i++) {
+        totalAcres += pinkAcres[i]
+        }  
+
+console.log(totalAcres)
 
 // PROBLEM 2
 
@@ -69,8 +81,9 @@ const pinkPrice = .55
 
 // CODE HERE
 
+const averageDailyAcres = totalAcres / 7
 
-
+console.log(averageDailyAcres)
 
 
 // PROBLEM 3
@@ -107,7 +120,12 @@ let days = 0
 
 // CODE HERE
 
+while(acresLeft > 0) {
+    days += 1
+    acresLeft -= averageDailyAcres
+}
 
+console.log(days)
 
 // PROBLEM 4
 
@@ -135,12 +153,15 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+const yield = 6.5
 
+let fujiTons = fujiAcres.map(apples => apples / yield);
+let galaTons = galaAcres.map(apples => apples / yield);
+let pinkTons = pinkAcres.map(apples => apples / yield);
 
-
+console.log(fujiTons)
+console.log(galaTons)
+console.log(pinkTons)
 
 
 
@@ -162,12 +183,19 @@ let days = 0
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+const ton = 2000
+
+const initalValue = 0;
 
 
 
+let fujiPounds = fujiTons.reduce((total, tons) => total + tons, 0) * poundsPerTon;
+let galaPounds = galaTons.reduce((total, tons) => total + tons, 0) * poundsPerTon;
+let pinkPounds = pinkTons.reduce((total, tons) => total + tons, 0) * poundsPerTon;
+
+console.log(fujiPounds);
+console.log(galaPounds);
+console.log(pinkPounds);
 
 
 
@@ -189,13 +217,14 @@ let days = 0
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiRevenue = fujiPounds * (fujiPricePerPound / 100);
+let galaRevenue = galaPounds * (galaPricePerPound / 100);
+let pinkRevenue = pinkPounds * (pinkPricePerPound / 100);
 
 
-
-
+console.log(fujiRevenue.toFixed(2));
+console.log(galaRevenue.toFixed(2));
+console.log(pinkRevenue.toFixed(2));
 
 
 // PROBLEM 7
@@ -209,3 +238,8 @@ let days = 0
 */
 
 // CODE HERE
+
+let totalProfit = fujiRevenue + galaRevenue + pinkRevenue;
+console.log(totalProfit.toFixed(2));
+
+//fixed (2) is just to hold to the second decimal point.
